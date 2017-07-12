@@ -1,0 +1,355 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pure CSS Ken Burns Slideshow</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.pic-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  /*animation*/
+  
+  animation: slideShow 102s linear infinite 0s;
+  -o-animation: slideShow 102s linear infinite 0s;
+  -moz-animation: slideShow 102s linear infinite 0s;
+  -webkit-animation: slideShow 102s linear infinite 0s;
+}
+
+figurecaption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+}
+
+.pic-1 {
+  opacity: 1;
+  background: url(acorn.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.pic-2 {
+  animation-delay: 6s;
+  -o-animation-delay: 6s;
+  -moz--animation-delay: 6s;
+  -webkit-animation-delay: 6s;
+  background: url(aloe.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.pic-3 {
+  animation-delay: 12s;
+  -o-animation-delay: 12s;
+  -moz--animation-delay: 12s;
+  -webkit-animation-delay: 12s;
+  background: url(ant.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.pic-4 {
+  animation-delay: 18s;
+  -o-animation-delay: 18s;
+  -moz--animation-delay: 18s;
+  -webkit-animation-delay: 18s;
+  background: url(boat-on-beach.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+.pic-5 {
+  animation-delay: 24s;
+  -o-animation-delay: 24s;
+  -moz--animation-delay: 24s;
+  -webkit-animation-delay: 24s;
+  background: url(city-skyline.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.pic-6 {
+  animation-delay: 30s;
+  -o-animation-delay: 30s;
+  -moz--animation-delay: 30s;
+  -webkit-animation-delay: 30s;
+  background: url(colored-pencils.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.pic-7 {
+  animation-delay: 36s;
+  -o-animation-delay: 36s;
+  -moz--animation-delay: 36s;
+  -webkit-animation-delay: 36s;
+  background: url(dicot.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.pic-8 {
+  animation-delay: 42s;
+  -o-animation-delay: 42s;
+  -moz--animation-delay: 42s;
+  -webkit-animation-delay: 42s;
+  background: url(fir.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.pic-9 {
+  animation-delay: 48s;
+  -o-animation-delay: 48s;
+  -moz--animation-delay: 48s;
+  -webkit-animation-delay: 48s;
+  background: url(fly.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.pic-10 {
+  animation-delay: 54s;
+  -o-animation-delay: 54s;
+  -moz--animation-delay: 54s;
+  -webkit-animation-delay: 54s;
+  background: url(frog.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.pic-11 {
+  animation-delay: 60s;
+  -o-animation-delay: 60s;
+  -moz--animation-delay: 60s;
+  -webkit-animation-delay: 60s;
+  background: url(hummingbird.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.pic-12 {
+  animation-delay: 66s;
+  -o-animation-delay: 66s;
+  -moz--animation-delay: 66s;
+  -webkit-animation-delay: 66s;
+  background: url(juniper.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.pic-13 {
+  animation-delay: 72s;
+  -o-animation-delay: 72s;
+  -moz--animation-delay: 72s;
+  -webkit-animation-delay: 72s;
+  background: url(ladybug.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.pic-14 {
+  animation-delay: 78s;
+  -o-animation-delay: 78s;
+  -moz--animation-delay: 78s;
+  -webkit-animation-delay: 78s;
+  background: url(pebbles.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.pic-15 {
+  animation-delay: 84s;
+  -o-animation-delay: 84s;
+  -moz--animation-delay: 84s;
+  -webkit-animation-delay: 84s;
+  background: url(seashell.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.pic-16 {
+  animation-delay: 90s;
+  -o-animation-delay: 90s;
+  -moz--animation-delay: 90s;
+  -webkit-animation-delay: 90s;
+  background: url(snowflake.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.pic-17 {
+  animation-delay: 96s;
+  -o-animation-delay: 96s;
+  -moz--animation-delay: 96s;
+  -webkit-animation-delay: 96s;
+  background: url(waterdrops.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* keyframes*/
+
+@keyframes 
+slideShow {  0% {
+ opacity: 0;
+ transform:scale(1);
+ -ms-transform:scale(1);
+}
+ 5% {
+ opacity: 1
+}
+ 25% {
+ opacity: 1;
+}
+ 30% {
+ opacity: 0;
+ transform:scale(1.1);
+ -ms-transform:scale(1.1);
+}
+ 100% {
+ opacity: 0;
+ transform:scale(1);
+ -ms-transformm:scale(1);
+}
+}
+ @-o-keyframes 
+slideShow {  0% {
+ opacity: 0;
+ -o-transform:scale(1);
+}
+ 5% {
+ opacity: 1
+}
+ 25% {
+ opacity: 1;
+}
+ 30% {
+ opacity: 0;
+ -o-transform:scale(1.1);
+}
+ 100% {
+ opacity: 0;
+ -o-transformm:scale(1);
+}
+}
+ @-moz-keyframes 
+slideShow {  0% {
+ opacity: 0;
+ -moz-transform:scale(1);
+}
+ 5% {
+ opacity: 1
+}
+ 25% {
+ opacity: 1;
+}
+ 30% {
+ opacity: 0;
+ -moz-transform:scale(1.1);
+}
+ 100% {
+ opacity: 0;
+ -moz-transformm:scale(1);
+}
+}
+ @-webkit-keyframes 
+slideShow {  0% {
+ opacity: 0;
+ -webkit-transform:scale(1);
+}
+ 5% {
+ opacity: 1
+}
+ 25% {
+ opacity: 1;
+}
+ 30% {
+ opacity: 0;
+ -webkit-transform:scale(1.1);
+}
+ 100% {
+ opacity: 0;
+ -webkit-transformm:scale(1);
+}
+}
+</style>
+</head>
+
+<body>
+<div class="pic-wrapper">
+  <figure class="pic-1"></figure>
+  <figure class="pic-2"></figure>
+  <figure class="pic-3"></figure>
+  <figure class="pic-4"></figure>
+  <figure class="pic-5"></figure>
+  <figure class="pic-6"></figure>
+  <figure class="pic-7"></figure>
+  <figure class="pic-8"></figure>
+  <figure class="pic-9"></figure>
+  <figure class="pic-10"></figure>
+  <figure class="pic-11"></figure>
+  <figure class="pic-12"></figure>
+  <figure class="pic-13"></figure>
+  <figure class="pic-14"></figure>
+  <figure class="pic-15"></figure>
+  <figure class="pic-16"></figure>
+  <figure class="pic-17"></figure>
+</div>
+</body>
+</html>
